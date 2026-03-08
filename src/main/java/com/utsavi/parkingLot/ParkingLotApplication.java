@@ -11,3 +11,9 @@ public class ParkingLotApplication {
 	}
 
 }
+
+/*
+ * Generating Ticket[based on model/functionality we decide controller] : Ticket => TicketController : TicketService
+ * UpdateSlotService => SlotController => SlotService
+ * AdminController => AdminService
+ */
