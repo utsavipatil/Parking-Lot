@@ -1,10 +1,22 @@
 package com.utsavi.parkingLot.model;
 
+import com.utsavi.parkingLot.enums.SlotStatus;
+import com.utsavi.parkingLot.enums.VehicleType;
+import lombok.Data;
+
+import java.util.HashMap;
 import java.util.List;
 
-public class ParkingLot {
-  private int id;
+@Data
+public class ParkingLot extends BaseModel{
   private Operator operator;
-  private Gate gate;
+  private List<Gate> exitGates;
+  private List<Gate> entryGates;
   private List<Floor> floors;
+  private HashMap<VehicleType, Integer> allowedVehicleTypes;
+  private SlotStatus slotStatus;
+
+  //Whenever we decide to create HashMap, we should think if we can actually create a class Instead
+  //Using booleans not got idea
+
 }

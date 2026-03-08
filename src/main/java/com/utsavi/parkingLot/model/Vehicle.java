@@ -1,10 +1,11 @@
 package com.utsavi.parkingLot.model;
 
 import com.utsavi.parkingLot.enums.VehicleType;
+import lombok.Data;
 
-public class Vehilcle {
-  private int id;
+@Data
+public class Vehicle extends BaseModel{
   private VehicleType vehicleType;
-  private int numberPlate;
+  private int licensePlate;
   private String ownerName;
 }
