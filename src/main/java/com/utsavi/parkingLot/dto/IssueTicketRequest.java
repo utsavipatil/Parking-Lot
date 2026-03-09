@@ -1,10 +1,15 @@
 package com.utsavi.parkingLot.dto;
 
+import com.utsavi.parkingLot.enums.VehicleType;
+import com.utsavi.parkingLot.model.ParkingLot;
+import com.utsavi.parkingLot.model.Vehicle;
 import lombok.Data;
 
 @Data
 public class IssueTicketRequest {
-  private String licenseNumber;
+  private String licensePlate;
   private String ownerName;
-  private int gateId;
+  private VehicleType vehicleType;
+  private Long gateId;
+  private Long parkingLotId ;
 }

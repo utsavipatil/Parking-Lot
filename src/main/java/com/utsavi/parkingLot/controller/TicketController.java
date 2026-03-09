@@ -17,7 +17,7 @@ public class TicketController {
   public IssueTicketResponse issueTicket(IssueTicketRequest request){
 
     try{
-       Ticket ticket = ticketService.issueTicket();
+       Ticket ticket = ticketService.issueTicket(request.getGateId(), request.getLicensePlate(), request.getOwnerName(),request.getVehicleType(), request.getParkingLotId());
        return IssueTicketResponse.builder().ticketId(ticket.getId()).responseStatus(ResponseStatus.SUCCESS).build();
 
      } catch (Exception e) {

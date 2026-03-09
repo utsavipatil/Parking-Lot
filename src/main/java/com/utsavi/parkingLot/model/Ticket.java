@@ -1,16 +1,19 @@
 package com.utsavi.parkingLot.model;
 
 import com.utsavi.parkingLot.enums.FeeCalculationStrategy;
+import lombok.Builder;
 import lombok.Data;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 @Data
+@Builder
 public class Ticket extends BaseModel{
-  private Timestamp entryTime;
+  private Date entryTime;
   private Vehicle vehicle;
   private Gate entryGate;
   private Operator operator;
   private Slot slot;
   private FeeCalculationStrategy feeCalculationStrategy;
+  private Floor floor;
 }
