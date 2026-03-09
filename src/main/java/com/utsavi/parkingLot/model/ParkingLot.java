@@ -5,11 +5,13 @@ import com.utsavi.parkingLot.enums.SlotStatus;
 import com.utsavi.parkingLot.enums.VehicleType;
 import com.utsavi.parkingLot.stratergy.slot.SlotAssigningStrategy;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.HashMap;
 import java.util.List;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class ParkingLot extends BaseModel{
   private Operator operator;
   private List<Gate> exitGates;
