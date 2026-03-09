@@ -46,7 +46,7 @@ The **Parking Lot Management System** is a comprehensive solution for managing m
 
 ## 🏗️ Architecture & Class Diagram
 
-### Mermaid Class Diagram
+### Class Diagram
 
 ```mermaid
 classDiagram
